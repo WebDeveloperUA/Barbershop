@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Барбершоп "Бородинский"</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+
+  <body>
+    <!-- HEADER -->
+    <header>
+      <nav class="main-navigation inner-navi">
+        <div class="main-navigation-wrapper">
+          <div class="box">
+            <a class="main-logo-navigation" href="./index.html">
+              <img src="./img/logo-inner.svg" alt="" width="111" height="24"
+            /></a>
+            <ul class="main-navigation-list">
+              <li><a href="./index.html">Информация</a></li>
+              <li><a href="./index.html">Новости</a></li>
+              <li><a href="./price.html">Прайс-лист</a></li>
+              <li><a href="./catalog.html">Магазин</a></li>
+              <li><a href="./index.html">Контакти</a></li>
+            </ul>
+            <div class="login">
+              <a class="login-link" href="">Вход</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- MAIN -->
+    
+      <main class="box item-page">
+        <h1>Набор для путешествий «Baxter of California»</h1>
+        <ul class="catalog-item-menu">
+          <li><a href="./index.html">ГЛАВНАЯ</a></li>
+          <li><a href="./catalog.html">МАГАЗИН</a></li>
+          <li><a href="./catalog.html">СРЕДСТВА ДЛЯ УХОДА</a></li>
+          <li class="currently">Набор для путешествий «Baxter of California»</li>
+        </ul>
+  
+        <section class="catalog-item-image">
+          <h2 class="visually-hidden">Изображение товара</h2>
+          <img class="catalog-item-container" src="./img/main photo.jpg" width="460" height="498" alt="" />
+          <ul class="item-image-list">
+            <li>
+              <img class="catalog-item-container" src="./img/photo 1.jpg" alt="" width="140" height="149" />
+            </li>
+            <li>
+              <img class="catalog-item-container" src="./img/photo 2.jpg" alt="" width="140" height="149" />
+            </li>
+            <li>
+              <img class="catalog-item-container" src="./img/photo 3.jpg" alt="" width="140" height="149" />
+            </li>
+          </ul>
+        </section>
+        
+        <div>
+        <section class="item-description">
+          <h2 class="visually-hidden">Описание товара</h2>
+          <p>ЕСТЬ В НАЛИЧИИ</p>
+          <p class="currently">АРТИКУЛ:DEXTER-AE</p>
+          <p>
+            Travel Kit – необходимый аксессуар во время любого путешествия. В
+            аккуратной кожаной сумке находится все, что нужно для бритья и ухода
+            за кожей во время рабочей поездки или отдыха: средство для умывания,
+            увлажняющий крем, крем для бритья, крем после бритья, шампунь. Набор
+            также может стать отличным подарком.
+          </p>
+          <p class="catalog-item-price">2900 P</p>
+          <button class="button" type="button">Купить</button>
+        </section>
+  
+        <section class="item-kit">
+          <h2>В набор входят:</h2>
+          <ul class="item-kit-list">
+            <li>Средство для умывания (50 мл)</li>
+            <li>Увлажняющий крем (50 мл)</li>
+            <li>Крем для бритья (50 мл)</li>
+            <li>Крем после бритья, шампунь (50 мл)</li>
+            <li>Удобная кожаная косметичка</li>
+          </ul>
+        </section>
+        </div>
+      </main>
+  
+
+    <!-- FOOTER -->
+    <!-- FOOTER -->
+    <footer class="main-footer">
+      <div class="box">
+        <section class="main-footer-contact">
+          <h2>Как добраться</h2>
+          <p>
+            БАРБЕРШОП «БОРОДИНСКИЙ» <br />
+            АДРЕС: Г. САНКТ-ПЕТЕРБУРГ, УЛ. Б. КОНЮШЕННАЯ, Д. 19/8 <br />
+            <a href="">КАК НАС НАЙТИ?</a> <br />
+            ТЕЛЕФОН: +7 (812) 666-02-66
+          </p>
+        </section>
+  
+        <section class="social">
+          <h2>Давайте дружить!</h2>
+          <ul class="social-list">
+            <li>
+              <a href=""
+                ><img
+                  src="./img/svg/vk.svg"
+                  width="27"
+                  height="15"
+                  alt="Вконтакте"
+              /></a>
+            </li>
+            <li>
+              <a href=""
+                ><img
+                  src="./img/svg/facebook.svg"
+                  width="11"
+                  height="22"
+                  alt="Фейсбук"
+              /></a>
+            </li>
+            <li>
+              <a href=""
+                ><img
+                  src="./img/svg/instagram.svg"
+                  width="20"
+                  height="20"
+                  alt="Инстаграм"
+              /></a>
+            </li>
+          </ul>
+        </section>
+        <p class="footer-copyright">
+          Розработано:
+          <a class="button" href="">HTML Academy</a>
+        </p>
+      </div>
+    </footer>
+
+    <!-- LOGIN FORM -->
+    <section class="modal modal-login">
+      <h2>Личний кабинет</h2>
+      <p>Введите пожалуйста свой логин и пароль</p>
+      <form class="form" action="" method="POST">
+        <p>
+          <label>
+            ЛОГИН
+            <input
+              type="email"
+              name="login"
+              placeholder="email@example.com"
+            />
+          </label>
+          <img src="./img/svg/account.svg" width="13" height="13" alt="" />
+        </p>
+        <p>
+          <label>
+            ПАРОЛЬ
+            <input type="password" name="password" placeholder="••••••••" />
+          </label>
+          <img src="./img/svg/lock.svg" width="13" height="15" alt="" />
+        </p>
+        <p>
+          <label>
+            ЗАПОМНИТЕ МЕНЯ
+            <input type="checkbox" name="remember-me" />
+          </label>
+          <a href="#">Я ЗАБЫЛ ПАРОЛЬ!</a>
+        </p>
+        <button class="button" type="submit">ВОЙТИ</button>
+      </form>
+      <button class="modal-close" type="button"></button>
+    </section>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
