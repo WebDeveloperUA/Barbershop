@@ -9,7 +9,12 @@
   --special: #663d15;
 }
 
-/* Global */
+
+
+/* -------Global--------- */
+
+
+
 body {
   min-width: 960px;
   margin: 0;
@@ -71,7 +76,42 @@ h1 {
   margin: -1px;
 }
 
-/* HEADER */
+
+
+/* -------BUTTON-------- */
+
+
+
+.button {
+  background-color: var(--basic-black);
+  color: var(--basic-white);
+  font-size: 14px;
+  line-height: 24px;
+  text-transform: uppercase;
+  padding: 0;
+  margin: 0;
+  border: none;
+  font-weight: 700;
+  font: inherit;
+  display: inline-block;
+  margin-right: 16px;
+  padding: 10px 30px;
+}
+
+.button:hover{
+  background-color: var(--basic-dark);
+  transition: 0.5s;
+}
+
+.button:disabled{
+  color: #c7c3be;
+  background-color: #938b8b;
+}
+
+
+/* --------HEADER---------- */
+
+
 
 .main-navigation {
   display: flex;
@@ -113,6 +153,11 @@ h1 {
   display: flex;
 }
 
+.main-navigation-item:hover, .login-link:hover{
+  background-color: var(--basic-dark);
+  transition: 0.5s;
+}
+
 .main-navigation-list a, .login-link{
   display: block;
   padding: 25px 20px;
@@ -139,7 +184,12 @@ h1 {
   left: 24px;
 }
 
-/* INNER NAVI */
+
+
+/* ---------INNER NAVI------- */
+
+
+
 .inner-navi .main-logo-navigation{
   order: 0;
   display: block;
@@ -152,7 +202,11 @@ h1 {
   height: 24px;
 }
 
-/* ADVANTURES */
+
+
+/* --------ADVANTURES---------- */
+
+
 
 .advantages {
   margin-top: 70px;
@@ -217,24 +271,12 @@ h1 {
   line-height: 42px;
 }
 
-/* BUTTON */
-.button {
-  background-color: var(--basic-black);
-  color: var(--basic-white);
-  font-size: 14px;
-  line-height: 24px;
-  text-transform: uppercase;
-  padding: 0;
-  margin: 0;
-  border: none;
-  font-weight: 700;
-  font: inherit;
-  display: inline-block;
-  margin-right: 16px;
-  padding: 10px 30px;
-}
 
-/* NEWS */
+
+/* ---------NEWS--------- */
+
+
+
 .news {
   width: 380px;
 }
@@ -253,7 +295,12 @@ h1 {
   margin: 0;
 }
 
-/* GALLERY */
+
+
+/* ---------GALLERY-------- */
+
+
+
 .gallery {
   width: 300px;
   position: relative;
@@ -338,42 +385,9 @@ h1 {
   margin-right: 0;
 }
 
-/* FOOTER */
-.main-footer {
-  background-color: var(--basic-extra-dark);
-  background-image: url(../img/black\ background@2x.png);
-  background-repeat: repeat;
-  font-size: 14px;
-  line-height: 24px;
-  padding: 60px 0;
-  margin-top: 65px;
-  color: var(--basic-white);
-}
+/* ---------SOCIAL---------- */
 
-.main-footer .box {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-}
 
-.main-footer h2 {
-  font-size: 14px;
-  line-height: 24px;
-}
-
-.main-footer-contact {
-  width: 320px;
-  margin: 0;
-}
-
-.main-footer-contact p {
-  margin: 0;
-}
-
-.main-footer-contact a {
-  text-decoration: underline;
-}
-
-/* SOCIAL */
 .social {
   width: 145px;
   justify-self: center;
@@ -415,13 +429,24 @@ h1 {
   display: block;
 }
 
-/* Login form */
+.social-button:hover path{
+  fill: var(--basic-extra-dark);
+}
+
+.social-button:hover{
+  background-color: var(--basic-extra-light);
+}
+
+
+/* --------Login form--------- */
+
+
 .login-window a {
   color: var(--basic-black);
   text-decoration: underline;
 }
 
-/* CATALOG-PAGE */
+/* ---------CATALOG-PAGE---------- */
 
 .catalog-page{
     display: grid;
@@ -633,7 +658,12 @@ line-height: 18px;
   margin-right: 5px;
 }
 
-/* PRICE */
+.catalog-page-number a:hover{
+  background-color: var(--basic-dark);
+}
+
+
+/* ---------PRICE----------- */
 
 .main-price {
   background: var(--basic-dark);
@@ -789,7 +819,7 @@ position: relative;
   padding: 10px 20px;
 }
 
-/* PAGE-CATALOG-ITEM */
+/* -------PAGE-CATALOG-ITEM------------ */
 
 .item-page{
   display: grid;
@@ -911,7 +941,50 @@ margin-left: -20px;
 top: 7px;
 }
 
-/* MODAL */
+
+/* -------------FOOTER------------ */
+
+
+.main-footer {
+  background-color: var(--basic-extra-dark);
+  background-image: url(../img/black\ background@2x.png);
+  background-repeat: repeat;
+  font-size: 14px;
+  line-height: 24px;
+  padding: 60px 0;
+  margin-top: 65px;
+  color: var(--basic-white);
+}
+
+.main-footer .box {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.main-footer h2 {
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.main-footer-contact {
+  width: 320px;
+  margin: 0;
+}
+
+.main-footer-contact p {
+  margin: 0;
+}
+
+.main-footer-contact a {
+  text-decoration: underline;
+}
+
+
+
+
+/* ---------MODAL----------- */
+
+
 .modal{
   margin: 0 auto;
   padding: 0;
@@ -985,4 +1058,14 @@ top: 7px;
 
 .modal-show{
   display: block;
+}
+
+.modal-forgot-password{
+  color: var(--basic-dark);
+}
+
+.template-body{
+  display: grid;
+  grid-template-rows: 
+  min-content 1fr min-content;
 }

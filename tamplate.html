@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -13,9 +13,7 @@
     <link rel="stylesheet" href="./css/normalize.css" />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
-
-  <body>
-    <!-- HEADER -->
+  <body class="template-body">
     <header>
       <nav class="main-navigation inner-navi">
         <div class="main-navigation-wrapper">
@@ -24,11 +22,15 @@
               <img src="./img/logo-inner.svg" alt="" width="111" height="24"
             /></a>
             <ul class="main-navigation-list">
-              <li class="main-navigation-item"><a href="tamplate.html">Информация</a></li>
-                <li class="main-navigation-item"><a href="./tamplate.html">Новости</a></li>
-                <li class="main-navigation-item"><a href="./price.html">Прайс-лист</a></li>
-                <li class="main-navigation-item"><a href="./catalog.html">Магазин</a></li>
-                <li class="main-navigation-item"><a href="./tamplate.html">Контакти</a></li>
+              <li class="main-navigation-item"><a href="#">Информация</a></li>
+              <li class="main-navigation-item"><a href="#">Новости</a></li>
+              <li class="main-navigation-item">
+                <a href="./price.html">Прайс-лист</a>
+              </li>
+              <li class="main-navigation-item">
+                <a href="./catalog.html">Магазин</a>
+              </li>
+              <li class="main-navigation-item"><a href="#">Контакти</a></li>
             </ul>
             <div class="login">
               <a class="login-link" href="">Вход</a>
@@ -37,66 +39,7 @@
         </div>
       </nav>
     </header>
-
-    <!-- MAIN -->
-    
-      <main class="box item-page">
-        <h1>Набор для путешествий «Baxter of California»</h1>
-        <ul class="catalog-item-menu">
-          <li><a href="./index.html">ГЛАВНАЯ</a></li>
-          <li><a href="./catalog.html">МАГАЗИН</a></li>
-          <li><a href="./catalog.html">СРЕДСТВА ДЛЯ УХОДА</a></li>
-          <li class="currently">Набор для путешествий «Baxter of California»</li>
-        </ul>
-  
-        <section class="catalog-item-image">
-          <h2 class="visually-hidden">Изображение товара</h2>
-          <img class="catalog-item-container" src="./img/main photo.jpg" width="460" height="498" alt="" />
-          <ul class="item-image-list">
-            <li>
-              <img class="catalog-item-container" src="./img/photo 1.jpg" alt="" width="140" height="149" />
-            </li>
-            <li>
-              <img class="catalog-item-container" src="./img/photo 2.jpg" alt="" width="140" height="149" />
-            </li>
-            <li>
-              <img class="catalog-item-container" src="./img/photo 3.jpg" alt="" width="140" height="149" />
-            </li>
-          </ul>
-        </section>
-        
-        <div>
-        <section class="item-description">
-          <h2 class="visually-hidden">Описание товара</h2>
-          <p>ЕСТЬ В НАЛИЧИИ</p>
-          <p class="currently">АРТИКУЛ:DEXTER-AE</p>
-          <p>
-            Travel Kit – необходимый аксессуар во время любого путешествия. В
-            аккуратной кожаной сумке находится все, что нужно для бритья и ухода
-            за кожей во время рабочей поездки или отдыха: средство для умывания,
-            увлажняющий крем, крем для бритья, крем после бритья, шампунь. Набор
-            также может стать отличным подарком.
-          </p>
-          <p class="catalog-item-price">2900 P</p>
-          <button class="button" type="button">Купить</button>
-        </section>
-  
-        <section class="item-kit">
-          <h2>В набор входят:</h2>
-          <ul class="item-kit-list">
-            <li>Средство для умывания (50 мл)</li>
-            <li>Увлажняющий крем (50 мл)</li>
-            <li>Крем для бритья (50 мл)</li>
-            <li>Крем после бритья, шампунь (50 мл)</li>
-            <li>Удобная кожаная косметичка</li>
-          </ul>
-        </section>
-        </div>
-      </main>
-  
-
-    <!-- FOOTER -->
-    <!-- FOOTER -->
+    <main></main>
     <footer class="main-footer">
       <div class="box">
         <section class="main-footer-contact">
@@ -108,7 +51,7 @@
             ТЕЛЕФОН: +7 (812) 666-02-66
           </p>
         </section>
-  
+
         <section class="social">
           <h2>Давайте дружить!</h2>
           <ul class="social-list">
@@ -137,7 +80,7 @@
         </section>
         <p class="footer-copyright">
           Розработано:
-          <a class="button" href="">HTML Academy</a>
+          <a class="button" href="#">HTML Academy</a>
         </p>
       </div>
     </footer>
@@ -150,11 +93,7 @@
         <p>
           <label>
             ЛОГИН
-            <input
-              type="email"
-              name="login"
-              placeholder="email@example.com"
-            />
+            <input type="email" name="login" placeholder="email@example.com" />
           </label>
           <img src="./img/svg/account.svg" width="13" height="13" alt="" />
         </p>
@@ -176,10 +115,11 @@
       </form>
       <button class="modal-close" type="button"></button>
     </section>
+
     <!-- POPAP MAP -->
     <section class="modal-map modal">
       <h2 class="visually-hidden">Как до нас добраться</h2>
-      <img src="./img/map 1.png" width="766" height="560" alt="">
+      <img src="./img/map 1.png" width="766" height="560" alt="" />
       <button class="modal-close" type="button"></button>
     </section>
     <script src="./js/script.js"></script>
