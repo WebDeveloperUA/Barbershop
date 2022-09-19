@@ -614,6 +614,12 @@ h1 {
   position: relative;
 }
 
+.catalog-item-container:hover{
+  position: relative;
+  transform: scale(1.1);
+  transition: 1s;
+}
+
 .catalog-item-container h3{
 margin-top: 17px;
 margin-right: 15px;
