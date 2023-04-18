@@ -1,6 +1,7 @@
 <h1 align="center">  Barbershop </h1>
 
-##  This is the first project I worked on after finishing the HTML and CSS course
+### :grey_question: About:
+- This is the first project I worked on after finishing the HTML and CSS course
 
 ### :ballot_box_with_check: Tasks that were set:
 - create a fixed-width site for a barbershop
